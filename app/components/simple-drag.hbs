@@ -1,0 +1,21 @@
+<div 
+    {{on "drop" this.dropItem}} 
+    {{on "dragover" this.dragOver}}
+    {{on "dragleave" this.dropLeave}}
+    {{on "dragenter" this.dropEnter}}
+    class="dropZone {{if this.overDropZone "dropZone-over"}}"
+    role="button"
+>
+    Drop Zone
+</div>
+<br><br>
+<div 
+    {{on "dragstart" this.dragHasStarted}}
+    class="dragMe" 
+    draggable="true"
+    role="button"
+>   
+    Drag Me
+</div>
+
+<p>Drag Status: "{{this.statusText}}"</p>

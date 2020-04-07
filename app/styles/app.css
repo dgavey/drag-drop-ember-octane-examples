@@ -1,0 +1,20 @@
+.dropZone {
+    padding: 10px;
+    background-color: #CCC;
+    width: 200px;
+    text-align: center;
+    border: 1px solid #fff;
+}
+.dropZone-over {
+    border: 1px dashed #333;
+    background-color: rgb(193, 211, 159);
+}
+
+.dragMe {
+    width: 200px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    cursor:move;
+}

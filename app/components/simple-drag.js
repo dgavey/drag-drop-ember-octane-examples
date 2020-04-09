@@ -7,29 +7,24 @@ export default class SimpleDrag extends Component {
     @tracked statusText = "";
     @tracked overDropZone = false;
 
-    @action
-    dragHasStarted() {
+    @action dragHasStarted() {
         this.statusText = "Drag has started";
     }
 
-    @action
-    dropItem(dragEvent) {
+    @action dropItem(dragEvent) {
         dragEvent.preventDefault();
         this.statusText = "Drop Has Completed";
         this.overDropZone = false;
     }
-    @action
-    dragOver(dragEvent) {
+    @action dragOver(dragEvent) {
         dragEvent.preventDefault();
         dragEvent.dataTransfer.dropEffect = "move";
     }
-    @action
-    dropLeave() {
+    @action dropLeave() {
         this.statusText = "Drag has left drop zone";
         this.overDropZone = false;
     }
-    @action
-    dropEnter() {
+    @action dropEnter() {
         this.statusText = "Drag is entered Drop Zone";
         this.overDropZone = true;
     }

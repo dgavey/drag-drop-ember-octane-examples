@@ -4,6 +4,7 @@
     width: 200px;
     text-align: center;
     border: 1px solid #fff;
+    margin-bottom: 24px;
 }
 .dropZone-over {
     border: 1px dashed #333;
